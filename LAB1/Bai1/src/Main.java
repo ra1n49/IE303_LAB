@@ -1,11 +1,14 @@
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.print("Hello and welcome!");
+    public static double sHinhTron(double r) {
+        return 4 * Math.atan(1) * r * r;
+    }
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
-        System.out.println("hi");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double r = sc.nextDouble();
+        double dientich = sHinhTron(r);
+        System.out.println(dientich);
     }
 }
